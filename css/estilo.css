@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Indie+Flower&family=Permanent+Marker&display=swap');
 
 /*CSS PARA LA ETIQUETA BODY*/
-body{
+.cuerpo{
     background-color: #00579E;  /* Cambiamos el color del texto a azul */
     margin: 0px; /* Quitamos cualquier margen exterior */
 }
@@ -40,12 +40,6 @@ main > section > article > h3{
     font-family: 'Permanent Marker', cursive; /*Establece la fuente del título como Permanent Marker*/
 }
 
-nav > ul{
-    margin: 0px; /* Quitamos cualquier margen exterior */
-    background-color: #A34F02; /* Color de fondo marrón */
-    text-align: center; /* Centramos los elementos */
-}
-
 nav > ul > li{
     display: inline-block; /* Define que el elemento sea un bloque y se muestre en línea */
     padding: 10px 20px 10px 20px; /* Agrega un relleno al elemento */
@@ -61,6 +55,15 @@ nav > ul > li:hover {
 nav > ul > li > a{
     text-decoration: none; /* Sin subrayado en el texto */
     color: #FBFF19; /* Color del texto amarillo */
+}
+
+/* Seleccionamos el elemento con el id "contador-productos" */
+#contador-productos{
+    font-weight: bold; /* Fuente de texto en negrita  */
+    color: #000; /* Color de letra negro */
+    padding: 5px; /* Añadimos un padding de 5px */
+    margin-left: 5px; /* Colocamos un margen izquierdo de 5px */
+    background-color: #ffc107; /* Fondo de color amarillo */
 }
 
 /* Seleccionamos el elemento con el id "notificacion" */
@@ -121,7 +124,7 @@ article{
 }
 
 /*CSS PARA LA ETIQUETA FOOTER*/
-footer{
+.pie_pagina{
     padding-top: 30px; /* Agregamos un espaciado superior */
     padding-bottom: 30px; /* Agregamos un espaciado inferior  */
     margin: 0px; /* Quitamos cualquier margen exterior */
@@ -173,7 +176,7 @@ footer{
 }
 
 /*Creamos la clase e invocamos sus propiedades en la página web*/
-.header {
+.cabeza {
     display: flex; /* Establece el elemento como un contenedor flexible. */
     justify-content: space-around; /* Distribuye el espacio entre los elementos de manera uniforme, dejando un espacio igual en ambos lados. */
     margin-right: 2rem; /* Establece un margen de 2 píxeles en el lado derecho del elemento. */
@@ -182,7 +185,7 @@ footer{
   }
 
 /*Creamos la clase e invocamos sus propiedades en la página web*/
-.container{
+.contenedor{
     display: flex; /*  Establece el elemento como un contenedor flexible. */
     flex-direction: column; /* Establece la dirección de los elementos secundarios como vertical. */
     flex-wrap: wrap; /* Los elementos secundarios se envuelvan en filas adicionales si el espacio es insuficiente. */
